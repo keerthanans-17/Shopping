@@ -9,12 +9,18 @@ class Shops extends Component {
         this.state = {
             initialCount: 0,
             count: 0,
-            productData: data
+            productData: data,
+            amount: 0
         }
+    }
+    handleCheckOut = () => {
+        let totalAmount = this.state.productData.reduce((total,initial) => (initial.Quantity > 0 ? total + initial.Price : 0),this.state.amount);
+        console.log("total : " + totalAmount);
+        this.setState({ amount: totalAmount });
     }
     handleAddToCart = (i) => {
         const newData = this.state.productData.map((data, index) => {
-            if (data.Quantity == 0 && i == index) {
+            if (data.Quantity === 0 && i === index) {
                 const newItem = {
                     ...data,
                     Quantity: data.Quantity + 1
@@ -29,11 +35,11 @@ class Shops extends Component {
     };
     handleIncreaseItem = (i) => {
         const newData = this.state.productData.map((data, index) => {
-            if (index == i) {
+            if (index === i) {
                 const newItem = {
                     ...data,
                     Quantity: data.Quantity + 1,
-                    Price: data.Quantity != 0 ? (data.Price + (data.Price * data.Quantity))/data.Quantity : data.Price
+                    Price: data.Quantity !== 0 ? (data.Price + (data.Price * data.Quantity)) / data.Quantity : data.Price
                 }
                 return newItem;
             }
@@ -45,13 +51,13 @@ class Shops extends Component {
     };
     handleDecreaseItem = (i) => {
         const newData = this.state.productData.map((data, index) => {
-            if (index == i && data.Quantity != 0) {
+            if (index === i && data.Quantity !== 0) {
                 const newItem = {
                     ...data,
                     Quantity: data.Quantity - 1,
                     Price: data.Quantity > 1 ? (data.Price - (data.Price / data.Quantity)) : data.Price
                 }
-                return newItem;  
+                return newItem;
             }
             return data;
         })
@@ -70,8 +76,9 @@ class Shops extends Component {
                     count={this.state.count}
                     data={this.state.productData}
                 />
-                <Footer 
-                
+                <Footer
+                    checkOut={this.handleCheckOut}
+                    amount={this.state.amount}
                 />
             </div>
 

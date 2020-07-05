@@ -1,8 +1,10 @@
-import React from 'react'
-function Footer(props){
+import React from 'react';
+import "../index.css";
+function Footer({amount,checkOut}){
     return(
-        <div>
-           <h2 > Total Amount:</h2>
+        <div className="footer">
+            <div className="hidden">Total Amount : {amount}</div>
+           <button type="button" onClick={()=>{checkOut()}}>CheckOut</button>
         </div>
     )
 }
