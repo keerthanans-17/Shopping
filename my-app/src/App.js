@@ -11,8 +11,9 @@ class App extends Component{
       <div>
         <Router>
           <div>
-            <nav>
-              <ul>
+            <div className="fixed__header">
+            <nav className="navbar">
+              {/* <ul className="menu__items">
                 <li>
                   <Link to="/">
                     OnileShopping
@@ -33,8 +34,13 @@ class App extends Component{
                     Feedback
                   </Link>
                 </li>
-              </ul>
+              </ul>  */}
+              <a className="menu__items" href="/">OnileShopping</a>
+              <a className="menu__items" href="/Shops">Shops</a>
+              <a className="menu__items" href="/AboutUs">AboutUs</a>
+              <a className="menu__items" href="/Feedback">Feedback</a>
             </nav>
+            </div>
             <Switch>
               <Route exact path="/">
                 <Welcome />
