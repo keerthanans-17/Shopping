@@ -1,0 +1,73 @@
+[
+    {
+      "Brandname": "Milkfood",
+      "Productname": "Milkfood Rich Desi Danedar Ghee",
+      "Quantity": 0,
+      "Price": 408,
+      "MRP": 498,
+      "productImage":"https://www.pngitem.com/pimgs/m/91-915568_white-milk-milk-products-dean-s-dairy-daily.png",  
+      "OfferText": "18% off"
+    },
+    {
+      "Brandname": "Grofers Mothers Choice",
+      "Productname": "Grofers Mothers Choice Desi Ghee",
+      "Quantity": 0,
+      "Price": 414,
+      "MRP": 450,
+      "productImage":"https://lh3.googleusercontent.com/proxy/HROIhTkYxsLCiAYlA68MkfsGtgUop7uEn_eWqPZFJM7EJLio1M22g-DDP0rGZ6T-9J3UW3BGsugg2l3j7ic4X_5MKtownaF8XdXXe_FbWoi-ufIT8rsh15nLBfJT3hlhIfJ1-J98RrEn4utZIzOQ9__2fZhea3DH1mQ",
+      "OfferText": "8% offer"
+    },{
+
+      "Brandname": "AMUL",
+      "Productname": "Amul Pure Ghee(carton)",
+      "Quantity": 0,
+      "Price": 460,
+      "MRP": 439,
+      "productImage":"https://5.imimg.com/data5/ET/DN/MY-28606098/amul-dairy-products-500x500.jpg",
+      "OfferText": "15% offer"
+    },{
+      "Brandname": "Patanjali Face Cream",
+      "Productname": "Patanjali Saundarya Anti Aging Cream",
+      "Quantity": 0,
+      "Price": 500,
+      "MRP": 700,
+      "productImage":"https://www.newlove-makeup.com/wp-content/uploads/2016/02/Patanjali-Aloe-Vera-Gel-600x600.jpeg",
+      "OfferText": "20% offer"
+
+    },{
+      "Brandname": "Patanjali Honey",
+      "Productname": "Patanjali Pure Honey(500gm)",
+      "Quantity": 0,
+      "Price": 700,
+      "MRP": 800,
+      "productImage":"https://5.imimg.com/data5/YW/BN/MY-39612858/patanjali-honey-500x500.jpg",
+      "OfferText": "10% offer"
+
+    },{
+      "Brandname": "Patanjali Hair Wash",
+      "Productname": "Patanjali Coconut Hair Wash(500gm)",
+      "Quantity": 0,
+      "Price": 300,
+      "MRP": 400,
+      "productImage":"https://qph.fs.quoracdn.net/main-qimg-d8f1ac17c58e1eb9cf891eacd8386e48.webp",
+      "OfferText": "10% offer"
+
+    },{
+      "Brandname": "Patanjali Hand Wash",
+      "Productname": "Anti Bacterial Herbal Hand Wash(500gm)",
+      "Quantity": 0,
+      "Price": 400,
+      "MRP": 500,
+      "productImage":"https://assetscdn1.paytm.com/images/catalog/product/F/FA/FASPATANJALI-HAPATA7246252ED339B7/a_3.jpg?imwidth=282&impolicy=hq",
+      "OfferText": "10% offer"
+    },{
+      "Brandname": "Patanjali Shower Gel",
+      "Productname": "Patanjali Shower Gel with Honey & Kesar(400gm)",
+      "Quantity": 0,
+      "Price": 800,
+      "MRP": 1000,
+      "productImage":"https://images-na.ssl-images-amazon.com/images/I/61rEQ-RmAvL._SL1200_.jpg",
+      "OfferText": "30% offer"
+    }
+  ]
+
