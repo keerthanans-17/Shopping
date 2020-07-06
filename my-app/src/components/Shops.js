@@ -13,10 +13,10 @@ class Shops extends Component {
             amount: 0
         }
     }
-    handleCheckOut = () => {
-        let totalAmount = this.state.productData.reduce((total,initial) => (initial.Quantity > 0 ? total + initial.Price : 0),this.state.amount);
-        console.log("total : " + totalAmount);
+    handleCheckOut = () => { 
+        let totalAmount = this.state.productData.reduce((total,initial)=> total + (initial.Quantity >0 ? initial.Price : 0) ,0);
         this.setState({ amount: totalAmount });
+        alert(`Total Amount ${totalAmount} Transcation sucessfull`)
     }
     handleAddToCart = (i) => {
         const newData = this.state.productData.map((data, index) => {

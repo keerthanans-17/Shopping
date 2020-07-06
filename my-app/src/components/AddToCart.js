@@ -2,20 +2,20 @@ import React from "react";
 // import './index.css';
 function AddToCart(props,...otherProps) {
   return (
-    <div className="main__body__container">
+    <div className="main__body__container" >
       {props.data.map((data,index) => {
         return (<div className="card__container" key={index}>
           <div className="image__container">
           <img src={data.productImage} alt={`Image of ${data.Productname}`} height="150px" width="150px" />
         </div>
-          <div className="item__details__container">
-            <h5>BrandName:{data.Brandname}</h5>
-            <div>Productname:{data.Productname}</div>
+          <div className="item__details__container" >
+            <h5>{data.Brandname}</h5>
+            <div>{data.Productname}</div>
             <div>Quantity:{data.Quantity}</div>
-            <div>Price:{data.Price}</div>
+            <div>Rs:{data.Price}</div>
             <div>MRP:{data.MRP}</div>
             
-            <div>OfferText:{data.OfferText}</div>
+            <div>Offer:{data.OfferText}</div>
             <button type="button" className="add__to__cart" onClick={()=>props.addToCart(index)}>
               ADD CART
             </button>
